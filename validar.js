@@ -1,7 +1,7 @@
 function validar(){
     ingresar = true;
     
-    var nombre
+    let nombre
     nombre = document.getElementById("nombre").value;
 
     if (nombre === ""){
@@ -13,7 +13,7 @@ function validar(){
         ingresar = false;
     }
 
-    var apellidos;
+    let apellidos;
     apellidos = document.getElementById("apellidos").value;
 
     if (apellidos === ""){
@@ -25,10 +25,10 @@ function validar(){
         ingresar = false;
     }
 
-   var correo;
+   let correo;
    correo = document.getElementById("correo").value;
 
-   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+   let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
    if(reg.test(correo) == false){
        alert("Correo incorrecto");
@@ -39,7 +39,7 @@ function validar(){
         ingresar = false;
     }
 
-    var usuario;
+    let usuario;
     usuario = document.getElementById("usuario").value;
     if (usuario === ""){
         alert("Todos los campos son obligatorios");
@@ -50,7 +50,7 @@ function validar(){
         ingresar = false;
         }
 
-    var pass;
+    let pass;
     pass = document.getElementById("pass").value;
     if (usuario === ""){
         alert("Todos los campos son obligatorios");
@@ -58,7 +58,7 @@ function validar(){
         }
 
 
-    var telefono;
+    let telefono;
     telefono = document.getElementById("telefono").value;
 
     if (telefono === ""){
